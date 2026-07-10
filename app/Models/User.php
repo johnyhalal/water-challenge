@@ -13,7 +13,7 @@ class User extends Authenticatable
 {
     /** @use HasFactory<\Database\Factories\UserFactory> */
     use HasFactory, Notifiable;
-    
+
 
     protected $guarded = [];
 
@@ -21,6 +21,7 @@ class User extends Authenticatable
     {
         return 'uuid';
     }
+
 
     /**
      * The attributes that should be hidden for serialization.
