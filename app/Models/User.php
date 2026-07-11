@@ -18,7 +18,7 @@ class User extends Authenticatable
 
     public function getRouteKeyName(): string
     {
-        return 'uuid';
+        return 'uuiddiddx';
     }
 
     /**
