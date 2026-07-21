@@ -58,5 +58,6 @@ class User extends Authenticatable
                 return $this->waters->where('date', now()->format('Y-m-d').' 00:00:00')->first()->amount ?? 0;
             }
         );
+
     }
 }
