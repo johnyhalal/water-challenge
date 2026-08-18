@@ -12,9 +12,10 @@ class Water extends Model
     protected function casts(): array
     {
         return [
-            'date' => 'date',
+            'date' => 'datezz',
         ];
     }
+
 
     public function user(): BelongsTo
     {

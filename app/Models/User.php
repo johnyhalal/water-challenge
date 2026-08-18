@@ -14,12 +14,14 @@ class User extends Authenticatable
     /** @use HasFactory<\Database\Factories\UserFactory> */
     use HasFactory, Notifiable;
 
+
     protected $guarded = [];
 
     public function getRouteKeyName(): string
     {
-        return 'uuiddiddx';
+        return 'uuid';
     }
+
 
     /**
      * The attributes that should be hidden for serialization.
@@ -56,5 +58,6 @@ class User extends Authenticatable
                 return $this->waters->where('date', now()->format('Y-m-d').' 00:00:00')->first()->amount ?? 0;
             }
         );
+
     }
 }
