@@ -12,7 +12,7 @@ class Water extends Model
     protected function casts(): array
     {
         return [
-            'date' => 'datez',
+            'date' => 'datezz',
         ];
     }
 
